@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="LuhnValidatorTest" tests="18" skipped="0" failures="0" errors="0" timestamp="2019-07-09T09:09:35" hostname="INdeepacheris-MacBook-Air.local" time="0.035">
+  <properties/>
+  <testcase name="testSimpleValidSINReversedRemainsValid" classname="LuhnValidatorTest" time="0.006"/>
+  <testcase name="testValidNumberWithAnOddNumberOfSpaces" classname="LuhnValidatorTest" time="0.0"/>
+  <testcase name="testValidCanadianSINValid" classname="LuhnValidatorTest" time="0.001"/>
+  <testcase name="testMoreThanSingleZeroValid" classname="LuhnValidatorTest" time="0.002"/>
+  <testcase name="testStringContainingSymbolsInvalidJavaTrackSpecific" classname="LuhnValidatorTest" time="0.0"/>
+  <testcase name="testSimpleValidSINReversedBecomesInvalid" classname="LuhnValidatorTest" time="0.001"/>
+  <testcase name="testSingleZeroIsInvalid" classname="LuhnValidatorTest" time="0.0"/>
+  <testcase name="testInvalidCanadianSINInvalid" classname="LuhnValidatorTest" time="0.001"/>
+  <testcase name="testStringContainingPunctuationInvalid" classname="LuhnValidatorTest" time="0.001"/>
+  <testcase name="testUsingASCIIValueForNonDoubledNonDigitNotAllowed" classname="LuhnValidatorTest" time="0.001"/>
+  <testcase name="testValidStringsWithANonDigitAtEndInvalid" classname="LuhnValidatorTest" time="0.001"/>
+  <testcase name="testValidNumberWithAnEvenNumberOfDigits" classname="LuhnValidatorTest" time="0.002"/>
+  <testcase name="testDigitNineConvertedToOutputNine" classname="LuhnValidatorTest" time="0.001"/>
+  <testcase name="testSingleSpaceWithZeroInvalid" classname="LuhnValidatorTest" time="0.0"/>
+  <testcase name="testSingleDigitStringInvalid" classname="LuhnValidatorTest" time="0.0"/>
+  <testcase name="testStringContainingSymbolsInvalid" classname="LuhnValidatorTest" time="0.001"/>
+  <testcase name="testInvalidCreditCardInvalid" classname="LuhnValidatorTest" time="0.002"/>
+  <testcase name="testUsingASCIIValueForDoubledNonDigitNotAllowed" classname="LuhnValidatorTest" time="0.001"/>
+  <system-out><![CDATA[5 
+3 
+1 
+8 
+6 
+4 
+2 
+8 
+4 
+4 
+5 
+0 
+0 
+5 
+5 
+8 
+4 
+4 
+5 
+8 
+-3 
+8 
+4 
+4 
+5 
+0 
+9 
+0 
+8 
+4 
+5 
+0 
+9 
+8 
+-12 
+6 
+0 
+5 
+7 
+3 
+1 
+7 
+8 
+10 
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

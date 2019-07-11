@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="DartsTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2019-07-06T13:10:29" hostname="INdeepacheris-MacBook-Air.local" time="0.01">
+  <properties/>
+  <testcase name="testDartLandsOnBorderBetweenMiddleAndInnerCircles" classname="DartsTest" time="0.003"/>
+  <testcase name="testDartLandsInTheInnerCircle" classname="DartsTest" time="0.0"/>
+  <testcase name="testCoordinatesSumLargerTenWithRadiusToOriginSmallerOrEqualTenScoredOuterCircle" classname="DartsTest" time="0.0"/>
+  <testcase name="testDartOutsideTarget" classname="DartsTest" time="0.001"/>
+  <testcase name="testDartLandsOnMiddleOfCircle" classname="DartsTest" time="0.0"/>
+  <testcase name="testDartLandsInOuterCircle" classname="DartsTest" time="0.0"/>
+  <testcase name="testCoordinatesSumLargerOneWithRadiusToOriginSmallerOrEqualOneScoredInnerCircle" classname="DartsTest" time="0.0"/>
+  <testcase name="testCoordinatesSumLargerFiveWithRadiusToOriginSmallerOrEqualFiveScoredMiddleCircle" classname="DartsTest" time="0.001"/>
+  <testcase name="testDartLandsOnBorderOfTarget" classname="DartsTest" time="0.0"/>
+  <testcase name="testDartLandsInBorderBetweenOuterAndMiddleCircles" classname="DartsTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
