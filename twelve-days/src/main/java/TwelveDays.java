@@ -1,26 +1,46 @@
 class TwelveDays {
-   private final  String days[] = {"","first","second","third","fourth","fifth","sixth","seventh","eighth","ninth","tenth","eleventh","twelfth"};
-   private final String gifts[] = {"","a Partridge in a Pear Tree.","two Turtle Doves","three French Hens","four Calling Birds","five Gold Rings","six Geese-a-Laying","seven Swans-a-Swimming","eight Maids-a-Milking","nine Ladies Dancing","ten Lords-a-Leaping","eleven Pipers Piping","twelve Drummers Drumming"};
+   private final  String days[] = {"first","second","third","fourth","fifth","sixth","seventh","eighth","ninth","tenth","eleventh","twelfth"};
 
     String verse(int verseNumber) {
-        String Verse = String.format("On the %s day of Christmas my true love gave to me: ",days[verseNumber]);
+        String stanza = String.format("On the %s day of Christmas my true love gave to me: ",days[verseNumber-1]);
+        switch(verseNumber)
+        {
+            case 12 :  stanza+="twelve Drummers Drumming, " ;
 
-        if(verseNumber==1)
-            Verse=String.format("%s%s\n",Verse,gifts[verseNumber]);
-        else{
-            for(int i = verseNumber;i>0;i--){
-                Verse = String.format("%s%s",Verse,gifts[i]);
-                Verse = i==2 ? String.format("%s, and ",Verse) : i!=1 ? String.format("%s, ",Verse) : String.format("%s\n",Verse) ;
-            }
+            case 11 : stanza+="eleven Pipers Piping, " ;
+
+            case 10 : stanza+="ten Lords-a-Leaping, " ;
+
+            case 9  : stanza+="nine Ladies Dancing, " ;
+
+            case 8  : stanza+="eight Maids-a-Milking, " ;
+
+            case 7  : stanza+="seven Swans-a-Swimming, ";
+
+            case 6 :  stanza+="six Geese-a-Laying, ";
+
+            case 5 : stanza+="five Gold Rings, ";
+
+            case 4 : stanza+="four Calling Birds, " ;
+
+            case 3 :  stanza+="three French Hens, ";
+
+            case 2:  stanza+="two Turtle Doves, and ";
+
+            case 1:   stanza+="a Partridge in a Pear Tree.\n";
+
         }
-        return Verse;
+        return stanza;
     }
 
     String verses(int startVerse, int endVerse) {
-        String resultedVerse ="";
-        for(int i=startVerse;i<=endVerse;i++)
-            resultedVerse  = i<endVerse ? String.format("%s%s\n",resultedVerse,verse(i)) : String.format("%s%s",resultedVerse,verse(i));
-        return  resultedVerse ;
+        String stanzas ="";
+        for(int i=startVerse;i<=endVerse;i++) {
+             stanzas += verse(i);
+            if (i<endVerse)
+                stanzas+= "\n";
+        }
+        return  stanzas;
     }
 
     String sing() {
